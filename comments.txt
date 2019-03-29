@@ -1,0 +1,1379 @@
+# lower–upper (LU) decomposition - https://en.wikipedia.org/wiki/LU_decomposition
+
+# Newton's Method - https://en.wikipedia.org/wiki/Newton%27s_method
+
+# Implementing Newton Raphson method in Python
+
+# Author: Haseeb
+
+# Let's Execute
+
+''' Finds root from the point 'a' onwards by Newton-Raphson method '''
+'''
+    >>> encryptMessage(4545, 'The affine cipher is a type of monoalphabetic substitution cipher.')
+    'VL}p MM{I}p~{HL}Gp{vp pFsH}pxMpyxIx JHL O}F{~pvuOvF{FuF{xIp~{HL}Gi'
+    '''
+'''
+    >>> decryptMessage(4545, 'VL}p MM{I}p~{HL}Gp{vp pFsH}pxMpyxIx JHL O}F{~pvuOvF{FuF{xIp~{HL}Gi')
+    'The affine cipher is a type of monoalphabetic substitution cipher.'
+    '''
+# I have written my code naively same as definition of primitive root
+
+# however every time I run this program, memory exceeded...
+
+# so I used 4.80 Algorithm in Handbook of Applied Cryptography(CRC Press, ISBN : 0-8493-8523-7, October 1996)
+
+# and it seems to run nicely!
+
+'''Function to encrypt text using psedo-random numbers'''
+'''Function to decrypt text using psedo-random numbers.'''
+# Primality Testing with the Rabin-Miller Algorithm
+
+'''
+    >>> encryptMessage('HDarji', 'This is Harshil Darji from Dharmaj.')
+    'Akij ra Odrjqqs Gaisq muod Mphumrs.'
+    '''
+'''
+    >>> decryptMessage('HDarji', 'Akij ra Odrjqqs Gaisq muod Mphumrs.')
+    'This is Harshil Darji from Dharmaj.'
+    '''
+# Tests
+
+# crypt = XORCipher()
+
+# key = 67
+
+# # test enrcypt
+
+# print crypt.encrypt("hallo welt",key)
+
+# # test decrypt
+
+# print crypt.decrypt(crypt.encrypt("hallo welt",key), key)
+
+# # test encrypt_string
+
+# print crypt.encrypt_string("hallo welt",key)
+
+# # test decrypt_string
+
+# print crypt.decrypt_string(crypt.encrypt_string("hallo welt",key),key)
+
+# if (crypt.encrypt_file("test.txt",key)):
+
+# 	print "encrypt successful"
+
+# else:
+
+# 	print "encrypt unsuccessful"
+
+# if (crypt.decrypt_file("encrypt.out",key)):
+
+# 	print "decrypt successful"
+
+# else:
+
+# 	print "decrypt unsuccessful"
+# t.preShow(t.root)
+
+# print("\n")
+
+# t.insert(4)
+
+# t.insert(5)
+
+# t.preShow(t.root)
+
+# t.preorden(t.root)
+
+# -*- coding: utf-8 -*-
+
+#        print("yyy")
+
+'''
+An auto-balanced binary tree!
+'''
+'''
+            A                      B
+           / \                    / \
+          B   C                  Bl  A
+         / \       -->          /   / \
+        Bl  Br                 UB Br  C
+       /
+     UB
+  
+    UB = unbalanced node  
+    '''
+'''
+        a mirror symmetry rotation of the leftrotation
+    '''
+'''
+            A              A                    Br      
+           / \            / \                  /  \
+          B   C    RR    Br  C       LR       B    A
+         / \       -->  /  \         -->    /     / \
+        Bl  Br         B   UB              Bl    UB  C  
+             \        /
+             UB     Bl
+    RR = rightrotation   LR = leftrotation
+    '''
+'''
+A binary search Tree
+'''
+'''
+    Example
+                  8
+                 / \
+                3   10
+               / \    \
+              1   6    14
+                 / \   /
+                4   7 13 
+    '''
+'''
+    Example After Deletion
+                  7
+                 / \
+                1   4
+
+    '''
+#!/usr/bin/env python3
+
+#!/usr/bin/env python3
+
+#!/usr/bin/env python3
+
+#!/usr/bin/env python3
+
+#!/usr/bin/python
+
+#This heap class start from here.
+
+'''
+- A linked list is similar to an array, it holds values. However, links in a linked list do not have indexes.
+- This is an example of a double ended, doubly linked list.
+- Each link references the next link and the previous one.
+- A Doubly Linked List (DLL) contains an extra pointer, typically called previous pointer, together with next pointer and data which are there in singly linked list.
+ - Advantages over SLL - IT can be traversed in both forward and backward direction.,Delete operation is more efficent'''
+# adding nodes
+
+# swapping nodes
+
+# swapping code ends here
+
+# Python code to demonstrate working of 
+
+# extend(), extendleft(), rotate(), reverse()
+
+# importing "collections" for deque operations
+
+# initializing deque
+
+# using extend() to add numbers to right end 
+
+# adds 4,5,6 to right end
+
+# printing modified deque
+
+# using extendleft() to add numbers to left end 
+
+# adds 7,8,9 to right end
+
+# printing modified deque
+
+# using rotate() to rotate the deque
+
+# rotates by 3 to left
+
+# printing modified deque
+
+# using reverse() to reverse the deque
+
+# printing modified deque
+
+# Function to print element and NGE pair for all elements of list
+
+# Driver program to test above function
+
+# A utility function to print elements of array 
+
+# Driver program to test above function 
+
+# Fill the span values in array S[] 
+
+# Print the calculated span values 
+
+'''
+The stock span problem is a financial problem where we have a series of n daily 
+price quotes for a stock and we need to calculate span of stock's price for all n days.
+
+The span Si of the stock's price on a given day i is defined as the maximum 
+number of consecutive days just before the given day, for which the price of the stock 
+on the current day is less than or equal to its price on the given day.
+'''
+#!/usr/bin/python
+
+# encoding=utf8
+
+# returns F(n)
+
+# returns (F(n), F(n-1))
+
+'''
+The number of partitions of a number n into at least k parts equals the number of partitions into exactly k parts
+plus the number of partitions into at least k-1 parts. Subtracting 1 from each part of a partition of n into k parts
+gives a partition of n-k into k parts. These two facts together are used for this algorithm.
+'''
+'''
+    This code involves the concept of memory functions. Here we solve the subproblems which are needed
+    unlike the below example
+    F is a 2D array with -1s filled up
+    '''
+'''
+    Adding test case for knapsack
+    '''
+#Some examples
+
+'''
+Author  : Mehdi ALAOUI
+
+This is a pure Python implementation of Dynamic Programming solution to the longest increasing subsequence of a given sequence.
+
+The problem is  :
+Given an ARRAY, to find the longest and increasing sub ARRAY in that given ARRAY and return it.
+Example: [10, 22, 9, 33, 21, 50, 41, 60, 80] as input will return [10, 22, 33, 41, 60, 80] as output
+'''
+#############################
+
+# Author: Aravind Kashyap
+
+# File: lis.py
+
+# comments: This programme outputs the Longest Strictly Increasing Subsequence in O(NLogN)
+
+#           Where N is the Number of elements in the list 
+
+#############################
+
+'''
+Auther  : Yvonne
+
+This is a pure Python implementation of Dynamic Programming solution to the longest_sub_array problem.
+
+The problem is  :
+Given an array, to find the longest and continuous sub array and get the max sum of the sub array in the given array.
+'''
+#Print order of matrix with Ai as Matrix
+
+'''
+Dynamic Programming
+Implementation of Matrix Chain Multiplication
+Time Complexity: O(n^3)
+Space Complexity: O(n^2)
+'''
+### PROBLEM ###
+
+### SOLUTION ###
+
+### EXAMPLE ###
+
+#The first price, 0, is for when we have no rod.
+
+# server
+
+# client side server
+
+# Finding Articulation Points in Undirected Graph
+
+# Adjacency list of graph
+
+#the cost map which pushes the path closer to the goal
+
+#the actions we can take
+
+#function to search the path
+
+'''
+heuristic = [[9, 8, 7, 6, 5, 4],
+             [8, 7, 6, 5, 4, 3],
+             [7, 6, 5, 4, 3, 2],
+             [6, 5, 4, 3, 2, 1],
+             [5, 4, 3, 2, 1, 0]]'''
+# Accept No. of Nodes and edges
+
+# Initialising Dictionary of edges
+
+# find the isolated node in the graph
+
+#MAIN
+
+#!/usr/bin/python
+
+# encoding=utf8
+
+# Check whether Graph is Bipartite or Not using BFS
+
+# A Bipartite Graph is a graph whose vertices can be divided into two independent sets,
+
+# U and V such that every edge (u, v) either connects a vertex from U to V or a vertex
+
+# from V to U. In other words, for every edge (u, v), either u belongs to U and v to V,
+
+# or u belongs to V and v to U. We can also say that there is no edge that connects
+
+# vertices of same set.
+
+# Adjacency List of graph
+
+#!/usr/bin/python
+
+# encoding=utf8
+
+#MAIN
+
+# Title: Dijkstra's Algorithm for finding single source shortest path from scratch
+
+# Author: Shubham Malik
+
+# References: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+
+# For storing the vertex set to retreive node with the lowest distance
+
+# OUTPUT
+
+# 0 -> 1(4) -> 7(8)
+
+# 1 -> 0(4) -> 2(8) -> 7(11)
+
+# 7 -> 0(8) -> 1(11) -> 6(1) -> 8(7)
+
+# 2 -> 1(8) -> 3(7) -> 8(2) -> 5(4)
+
+# 3 -> 2(7) -> 4(9) -> 5(14)
+
+# 8 -> 2(2) -> 6(6) -> 7(7)
+
+# 5 -> 2(4) -> 3(14) -> 4(10) -> 6(2)
+
+# 4 -> 3(9) -> 5(10)
+
+# 6 -> 5(2) -> 7(1) -> 8(6)
+
+# Distance from node: 0
+
+# Node 0 has distance: 0
+
+# Node 1 has distance: 4
+
+# Node 2 has distance: 12
+
+# Node 3 has distance: 19
+
+# Node 4 has distance: 21
+
+# Node 5 has distance: 11
+
+# Node 6 has distance: 9
+
+# Node 7 has distance: 8
+
+# Node 8 has distance: 14
+
+# ----Path to reach 4 from 0----
+
+# 0 -> 7 -> 6 -> 5 -> 4
+
+# Total cost of path:  21
+
+# the dfault weight is 1 if not assigend but all the implementation is weighted
+
+# pylint: disable=invalid-name
+
+# Finding Bridges in Undirected Graph
+
+#MAIN
+
+#!/usr/bin/python
+
+# encoding=utf8
+
+# Author: OMKAR PATHAK
+
+# We can use Python's dictionary for constructing the graph
+
+# Finding longest distance in Directed Acyclic Graph using KahnsAlgorithm
+
+# Adjacency list of Graph
+
+# Kahn's Algorithm is used to find Topological ordering of Directed Acyclic Graph using BFS
+
+# Adjacency List of Graph
+
+# < --------- Prims Algorithm --------- >
+
+# hyper parameters
+
+# start and end destination
+
+# n - no of nodes, m - no of edges
+
+# input graph data (edges)
+
+# Chaos Machine (K, t, m)
+
+# Buffer Space (with Parameters Space)
+
+# Machine Time
+
+#######################################
+
+# Initialization
+
+# Pushing Data (Input)
+
+# for controlling 
+
+# Pulling Data (Output)
+
+# -*- coding: utf-8 -*-
+
+# -*- coding: utf-8 -*-
+
+# List of input, output pairs
+
+# Mock test below
+
+'''README, Author - Anurag Kumar(mailto:anuragkumarak95@gmail.com)
+
+Requirements:
+  - sklearn
+  - numpy
+  - matplotlib
+
+Python:
+  - 3.5
+
+Inputs:
+  - X , a 2D numpy array of features.
+  - k , number of clusters to create.
+  - initial_centroids , initial centroid values generated by utility function(mentioned in usage).
+  - maxiter , maximum number of iterations to process.
+  - heterogeneity , empty list that will be filled with hetrogeneity values if passed to kmeans func.
+
+Usage:
+  1. define 'k' value, 'X' features array and 'hetrogeneity' empty list
+  
+  2. create initial_centroids,
+        initial_centroids = get_initial_centroids(
+            X, 
+            k, 
+            seed=0 # seed value for initial centroid generation, None for randomness(default=None)
+            )
+
+  3. find centroids and clusters using kmeans function.
+  
+        centroids, cluster_assignment = kmeans(
+            X, 
+            k, 
+            initial_centroids, 
+            maxiter=400,
+            record_heterogeneity=heterogeneity, 
+            verbose=True # whether to print logs in console or not.(default=False)
+            )
+  
+  
+  4. Plot the loss function, hetrogeneity values for every iteration saved in hetrogeneity list.
+        plot_heterogeneity(
+            heterogeneity, 
+            k
+        )
+  
+  5. Have fun..
+  
+'''
+'''Randomly choose k data points as initial centroids'''
+'''This function runs k-means on given data and initial set of centroids.
+       maxiter: maximum number of iterations to run.(default=500)
+       record_heterogeneity: (optional) a list, to store the history of heterogeneity as function of iterations
+                             if None, do not store the history.
+       verbose: if True, print how many data points changed their cluster labels in each iteration'''
+#!/usr/bin/python
+
+# -*- coding: utf-8 -*-
+
+## Logistic Regression from scratch
+
+# In[62]:
+
+# In[63]:
+
+# importing all the required libraries
+
+# get_ipython().run_line_magic('matplotlib', 'inline')
+
+# In[67]:
+
+# sigmoid function or logistic function is used as a hypothesis function in classification problems
+
+# here alpha is the learning rate, X is the feature matrix,y is the target matrix
+
+# In[68]:
+
+''' Implementing logistic regression for classification problem 
+     Helpful resources : 1.Coursera ML course    2.https://medium.com/@martinpella/logistic-regression-from-scratch-in-python-124c5636b8ac'''
+'''
+
+	Perceptron
+	w = w + N * (d(k) - y) * x(k)
+
+	Using perceptron network for oil analysis,
+	with Measuring of 3 parameters that represent chemical characteristics we can classify the oil, in p1 or p2
+	p1 = -1
+	p2 = 1
+
+'''
+#Mean Absolute Error
+
+#Mean Squared Error
+
+#Root Mean Squared Error
+
+#Root Mean Square Logarithmic Error
+
+#Mean Bias Deviation
+
+# Random Forest Classification
+
+# Importing the libraries
+
+# Importing the dataset
+
+# Splitting the dataset into the Training set and Test set
+
+# Feature Scaling
+
+# Fitting Random Forest Classification to the Training set
+
+# Predicting the Test set results
+
+# Making the Confusion Matrix
+
+# Visualising the Training set results
+
+# Visualising the Test set results
+
+# Random Forest Regression
+
+# Importing the libraries
+
+# Importing the dataset
+
+# Splitting the dataset into the Training set and Test set
+
+# Feature Scaling
+
+# Fitting Random Forest Regression to the dataset
+
+# Predicting a new result
+
+# Visualising the Random Forest Regression results (higher resolution)
+
+# @Author: S. Sharma <silentcat>
+
+# @Date:   2019-02-25T12:08:53-06:00
+
+# @Email:  silentcat@protonmail.com
+
+# @Last modified by:   silentcat
+
+# @Last modified time: 2019-02-26T07:07:38-06:00
+
+# Finds 2 numbers a and b such that it satisfies
+
+# the equation am + bn = gcd(m, n) (a.k.a Bezout's Identity)
+
+# Python program to find the factorial of a number provided by the user.
+
+# change the value for a different result
+
+# uncomment to take input from the user
+
+#num = int(input("Enter a number: "))
+
+# check if the number is negative, positive or zero
+
+# Fibonacci Sequence Using Recursion
+
+# NguyenU
+
+# Greater Common Divisor - https://en.wikipedia.org/wiki/Greatest_common_divisor
+
+'''
+    Author: P Shreyas Shetty
+    Implementation of Newton-Raphson method for solving equations of kind
+    f(x) = 0. It is an iterative method where solution is found by the expression
+        x[n+1] = x[n] + f(x[n])/f'(x[n])
+    If no solution exists, then either the solution will not be found when iteration
+    limit is reached or the gradient f'(x[n]) approaches zero. In both cases, exception
+    is raised. If iteration limit is reached, try increasing maxiter.
+    '''
+'''
+     Calculates derivative at point a for function f using finite difference
+     method
+    '''
+# "Simpson Rule"
+
+# int(f) = delta_x/2 * (b-a)/3*(f1 + 4f2 + 2f_3 + ... + fn)
+
+'''
+Numerical integration or quadrature for a smooth function f with known values at x_i
+
+This method is the classical approch of suming 'Equally Spaced Abscissas' 
+
+method 2: 
+"Simpson Rule"
+
+'''
+# "extended trapezoidal rule"
+
+# int(f) = dx/2 * (f1 + 2f2 + ... + fn)
+
+'''
+Numerical integration or quadrature for a smooth function f with known values at x_i
+
+This method is the classical approch of suming 'Equally Spaced Abscissas' 
+
+method 1: 
+"extended trapezoidal rule"
+
+'''
+# Ford-Fulkerson Algorithm for Maximum Flow Problem
+
+# Minimum cut on Ford_Fulkerson algorithm.
+
+#!/usr/bin/python
+
+# encoding=utf8
+
+'''
+
+A Framework of Back Propagation Neural Network（BP） model
+
+Easy to use:
+    * add many layers as you want ！！！
+    * clearly see how the loss decreasing
+Easy to expand:
+    * more activation functions
+    * more loss functions
+    * more optimization method
+
+Author: Stephen Lee
+Github : https://github.com/RiptideBo
+Date: 2017.11.23
+
+'''
+'''
+    Layers of BP neural network
+    '''
+'''
+        common connected layer of bp network
+        :param units: numbers of neural units
+        :param activation: activation function
+        :param learning_rate: learning rate for paras
+        :param is_input_layer: whether it is input layer or not
+        '''
+'''
+    Back Propagation Neural Network model
+    '''
+#-*- coding: utf-8 -*-
+
+'''
+     - - - - - -- - - - - - - - - - - - - - - - - - - - - - -
+    Name - - CNN - Convolution Neural Network For Photo Recognizing
+    Goal - - Recognize Handing Writting Word Photo
+    Detail：Total 5 layers neural network
+            * Convolution layer
+            * Pooling layer
+            * Input layer layer of BP
+            * Hiden layer of BP
+            * Output layer of BP
+    Author: Stephen Lee
+    Github: 245885195@qq.com
+    Date: 2017.9.20
+    - - - - - -- - - - - - - - - - - - - - - - - - - - - - -
+          '''
+'''
+        :param conv1_get: [a,c,d]，size, number, step of convolution kernel
+        :param size_p1: pooling size
+        :param bp_num1: units number of flatten layer
+        :param bp_num2: units number of hidden layer
+        :param bp_num3: units number of output layer
+        :param rate_w: rate of weight learning
+        :param rate_t: rate of threshold learning
+        '''
+'''
+        calcluate the gradient from the data slice of pool layer
+        pd_pool: list of matrix
+        out_map: the shape of data slice(size_map*size_map)
+        return: pd_all: list of matrix, [num, size_map, size_map]
+        '''
+'''
+                print('  -----original shape   ', np.shape(data_train))
+                print('  ---- after convolution  ',np.shape(data_conv1))
+                print('  -----after pooling  ',np.shape(data_pooled1))
+               '''
+'''
+    I will put the example on other file
+    '''
+'''
+
+	Perceptron
+	w = w + N * (d(k) - y) * x(k)
+
+	Using perceptron network for oil analysis,
+	with Measuring of 3 parameters that represent chemical characteristics we can classify the oil, in p1 or p2
+	p1 = -1
+	p2 = 1
+
+'''
+# https://en.wikipedia.org/wiki/Euclidean_algorithm
+
+'''
+-The sieve of Eratosthenes is an algorithm used to find prime numbers, less than or equal to a given value.
+-Illustration: https://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif
+'''
+#!/usr/bin/python
+
+# encoding=utf8
+
+# Frequency Finder
+
+# frequency taken from http://en.wikipedia.org/wiki/Letter_frequency
+
+'''
+    >>> englishFreqMatchScore('Hello World')
+    1
+    '''
+'''
+The nested brackets problem is a problem that determines if a sequence of
+brackets are properly nested.  A sequence of brackets s is considered properly nested
+if any of the following conditions are true:
+
+	- s is empty
+	- s has the form (U) or [U] or {U} where U is a properly nested string
+	- s has the form VW where V and W are properly nested strings
+
+For example, the string "()()[()]" is properly nested but "[(()]" is not.
+
+The function called is_balanced takes as input a string S which is a sequence of brackets and
+returns true if S is nested and false otherwise.
+
+'''
+# Program to find whether given string is palindrome or not
+
+# Recursive method
+
+# ALTERNATIVE METHODS  
+
+# ctbi= characters that must be in password
+
+# i= how many letters or characters the password length will be 
+
+# -*- coding: utf-8 -*-
+
+# ------------------------------------------
+
+# --------------------------------
+
+# -----------------------------------------
+
+# -----------------------------------------
+
+# ----------------------------------------------
+
+# ----------------------
+
+# ------------------------
+
+# ------------------------
+
+# ----------------------------------------------
+
+# ----------------------------------------------------
+
+# ----------------------------------
+
+# ---------------------------------------------------
+
+# ----------------------------------------------------
+
+# ----------------------------------------------------
+
+# ------------------------------------------------------------
+
+# -----------------------------------------------------------------
+
+# -------------------------------------------------------------------
+
+#!/usr/bin/python
+
+# encoding=utf8
+
+'''Author Anurag Kumar | anuragkumarak95@gmail.com | git/anuragkumarak95
+
+Simple example of Fractal generation using recursive function.
+
+What is Sierpinski Triangle?
+>>The Sierpinski triangle (also with the original orthography Sierpinski), also called the Sierpinski gasket or the Sierpinski Sieve, 
+is a fractal and attractive fixed set with the overall shape of an equilateral triangle, subdivided recursively into smaller 
+equilateral triangles. Originally constructed as a curve, this is one of the basic examples of self-similar sets, i.e., 
+it is a mathematically generated pattern that can be reproducible at any magnification or reduction. It is named after 
+the Polish mathematician Wacław Sierpinski, but appeared as a decorative pattern many centuries prior to the work of Sierpinski.
+
+Requirements(pip):
+  - turtle
+
+Python:
+  - 2.6
+
+Usage:
+  - $python sierpinski_triangle.py <int:depth_for_fractal>
+
+Credits: This code was written by editing the code from http://www.lpb-riannetrujillo.com/blog/python-fractal/
+
+'''
+'''
+    >>> moveTower(3, 'A', 'B', 'C')
+    moving disk from A to B
+    moving disk from A to C
+    moving disk from B to C
+    moving disk from A to B
+    moving disk from C to A
+    moving disk from C to B
+    moving disk from A to B
+    '''
+'''Conway's Game Of Life, Author Anurag Kumar(mailto:anuragkumarak95@gmail.com) 
+
+Requirements:
+  - numpy
+  - random
+  - time
+  - matplotlib
+
+Python:
+  - 3.5
+
+Usage:
+  - $python3 game_o_life <canvas_size:int>
+
+Game-Of-Life Rules:
+ 
+ 1.
+ Any live cell with fewer than two live neighbours
+ dies, as if caused by under-population.
+ 2.
+ Any live cell with two or three live neighbours lives
+ on to the next generation.
+ 3.
+ Any live cell with more than three live neighbours
+ dies, as if by over-population.
+ 4.
+ Any dead cell with exactly three live neighbours be-
+ comes a live cell, as if by reproduction.
+ '''
+''' This  function runs the rules of game through all points, and changes their status accordingly.(in the same canvas)
+    @Args:
+    --
+    canvas : canvas of population to run the rules on.
+
+    @returns:
+    --
+    None
+    '''
+'''
+Problem Statement:
+If we list all the natural numbers below 10 that are multiples of 3 or 5,
+we get 3,5,6 and 9. The sum of these multiples is 23.
+Find the sum of all the multiples of 3 or 5 below N.
+'''
+'''
+Problem Statement:
+If we list all the natural numbers below 10 that are multiples of 3 or 5,
+we get 3,5,6 and 9. The sum of these multiples is 23.
+Find the sum of all the multiples of 3 or 5 below N.
+'''
+'''
+Problem Statement:
+If we list all the natural numbers below 10 that are multiples of 3 or 5,
+we get 3,5,6 and 9. The sum of these multiples is 23.
+Find the sum of all the multiples of 3 or 5 below N.
+'''
+'''
+This solution is based on the pattern that the successive numbers in the series follow: 0+3,+2,+1,+3,+1,+2,+3.
+'''
+'''
+Problem Statement:
+If we list all the natural numbers below 10 that are multiples of 3 or 5,
+we get 3,5,6 and 9. The sum of these multiples is 23.
+Find the sum of all the multiples of 3 or 5 below N.
+'''
+'''
+Problem:
+Each new term in the Fibonacci sequence is generated by adding the previous two terms. By starting with 1 and 2,
+the first 10 terms will be:
+                1,2,3,5,8,13,21,34,55,89,..
+By considering the terms in the Fibonacci sequence whose values do not exceed n, find the sum of the even-valued terms.
+e.g. for n=10, we have {2,8}, sum is 10.
+'''
+'''
+Problem:
+Each new term in the Fibonacci sequence is generated by adding the previous two terms. 
+                0,1,1,2,3,5,8,13,21,34,55,89,..
+Every third term from 0 is even So using this I have written a simple code
+By considering the terms in the Fibonacci sequence whose values do not exceed n, find the sum of the even-valued terms.
+e.g. for n=10, we have {2,8}, sum is 10.
+'''
+'''
+Problem:
+The prime factors of 13195 are 5,7,13 and 29. What is the largest prime factor of a given number N?
+e.g. for 10, largest prime factor = 5. For 17, largest prime factor = 17.
+'''
+'''
+Problem:
+The prime factors of 13195 are 5,7,13 and 29. What is the largest prime factor of a given number N?
+e.g. for 10, largest prime factor = 5. For 17, largest prime factor = 17.
+'''
+# fetchs the next number
+
+'''
+Problem:
+A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 x 99.
+Find the largest palindrome made from the product of two 3-digit numbers which is less than N.
+'''
+'''
+Problem:
+A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 x 99.
+Find the largest palindrome made from the product of two 3-digit numbers which is less than N.
+'''
+'''
+Problem:
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+What is the smallest positive number that is evenly divisible(divisible with no remainder) by all of the numbers from 1 to N?
+'''
+#!/bin/python3
+
+'''
+Problem:
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+What is the smallest positive number that is evenly divisible(divisible with no remainder) by all of the numbers from 1 to N?
+'''
+# -*- coding: utf-8 -*-
+
+'''
+Problem:
+The sum of the squares of the first ten natural numbers is,
+            1^2 + 2^2 + ... + 10^2 = 385
+The square of the sum of the first ten natural numbers is,
+            (1 + 2 + ... + 10)^2 = 552 = 3025
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
+Find the difference between the sum of the squares of the first N natural numbers and the square of the sum.
+'''
+# -*- coding: utf-8 -*-
+
+'''
+Problem:
+The sum of the squares of the first ten natural numbers is,
+            1^2 + 2^2 + ... + 10^2 = 385
+The square of the sum of the first ten natural numbers is,
+            (1 + 2 + ... + 10)^2 = 552 = 3025
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
+Find the difference between the sum of the squares of the first N natural numbers and the square of the sum.
+'''
+'''
+Problem:
+The sum of the squares of the first ten natural numbers is,
+            1^2 + 2^2 + ... + 10^2 = 385
+The square of the sum of the first ten natural numbers is,
+            (1 + 2 + ... + 10)^2 = 552 = 3025
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
+Find the difference between the sum of the squares of the first N natural numbers and the square of the sum.
+'''
+'''
+By listing the first six prime numbers:
+2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+What is the Nth prime number?
+'''
+# By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13. What is the Nth prime number?
+
+# from Python.Math import PrimeCheck
+
+'''
+By listing the first six prime numbers:
+2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+What is the Nth prime number?
+'''
+# Program to find the product of a,b,c which are Pythagorean Triplet that satisfice the following:
+
+# 1. a < b < c
+
+# 2. a**2 + b**2 = c**2
+
+# 3. a + b + c = 1000
+
+#!/bin/python3
+
+#from Python.Math import prime_generator
+
+'''
+What is the greatest product of four adjacent numbers (horizontally, vertically, or diagonally) in this 20x20 array?
+
+08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
+49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
+81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
+52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91
+22 31 16 71 51 67 63 89 41 92 36 54 22 40 40 28 66 33 13 80
+24 47 32 60 99 03 45 02 44 75 33 53 78 36 84 20 35 17 12 50
+32 98 81 28 64 23 67 10 26 38 40 67 59 54 70 66 18 38 64 70
+67 26 20 68 02 62 12 20 95 63 94 39 63 08 40 91 66 49 94 21
+24 55 58 05 66 73 99 26 97 17 78 78 96 83 14 88 34 89 63 72
+21 36 23 09 75 00 76 44 20 45 35 14 00 61 33 97 34 31 33 95
+78 17 53 28 22 75 31 67 15 94 03 80 04 62 16 14 09 53 56 92
+16 39 05 42 96 35 31 47 55 58 88 24 00 17 54 24 36 29 85 57
+86 56 00 48 35 71 89 07 05 44 44 37 44 60 21 58 51 54 17 58
+19 80 81 68 05 94 47 69 28 73 92 13 86 52 17 77 04 89 55 40
+04 52 08 83 97 35 99 16 07 97 57 32 16 26 26 79 33 27 98 66
+88 36 68 87 57 62 20 72 03 46 33 67 46 55 12 32 63 93 53 69
+04 42 16 73 38 25 39 11 24 94 72 18 08 46 29 32 40 62 76 36
+20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16
+20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
+01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
+'''
+'''
+Highly divisible triangular numbers
+Problem 12
+The sequence of triangle numbers is generated by adding the natural numbers. So the 7th triangle number would be 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28. The first ten terms would be:
+
+1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...
+
+Let us list the factors of the first seven triangle numbers:
+
+ 1: 1
+ 3: 1,3
+ 6: 1,2,3,6
+10: 1,2,5,10
+15: 1,3,5,15
+21: 1,3,7,21
+28: 1,2,4,7,14,28
+We can see that 28 is the first triangle number to have over five divisors.
+
+What is the value of the first triangle number to have over five hundred divisors?
+'''
+'''
+Problem Statement:
+Work out the first ten digits of the sum of the N 50-digit numbers.
+'''
+'''
+Number letter counts
+Problem 17
+
+If the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.
+
+If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?
+
+
+NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) 
+contains 20 letters. The use of "and" when writing out numbers is in compliance with British usage.
+'''
+'''
+Counting Sundays
+Problem 19
+
+You are given the following information, but you may prefer to do some research for yourself.
+
+1 Jan 1900 was a Monday.
+Thirty days has September,
+April, June and November.
+All the rest have thirty-one,
+Saving February alone,
+Which has twenty-eight, rain or shine.
+And on leap years, twenty-nine.
+
+A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.
+
+How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
+'''
+# Finding the factorial.
+
+# Spliting the digits and adding it.
+
+# Taking the user input.
+
+# Assigning the factorial from the factorial function.
+
+# Spliting and adding the factorial into answer.
+
+# Printing the answer.
+
+#-.- coding: latin-1 -.-
+
+'''
+Amicable Numbers
+Problem 21
+
+Let d(n) be defined as the sum of proper divisors of n (numbers less than n which divide evenly into n).
+If d(a) = b and d(b) = a, where a ≠ b, then a and b are an amicable pair and each of a and b are called amicable numbers.
+
+For example, the proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 and 110; therefore d(220) = 284. The proper divisors of 284 are 1, 2, 4, 71 and 142; so d(284) = 220.
+
+Evaluate the sum of all the amicable numbers under 10000.
+'''
+# -*- coding: latin-1 -*-
+
+'''
+Name scores
+Problem 22
+
+Using names.txt (right click and 'Save Link/Target As...'), a 46K text file containing over five-thousand first names, begin by sorting it 
+into alphabetical order. Then working out the alphabetical value for each name, multiply this value by its alphabetical position in the list 
+to obtain a name score.
+
+For example, when the list is sorted into alphabetical order, COLIN, which is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. 
+So, COLIN would obtain a score of 938 × 53 = 49714.
+
+What is the total of all the name scores in the file?
+'''
+# -*- coding: utf-8 -*-
+
+'''
+Coin sums
+Problem 31
+In England the currency is made up of pound, £, and pence, p, and there are
+eight coins in general circulation:
+
+1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p).
+It is possible to make £2 in the following way:
+
+1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
+How many different ways can £2 be made using any number of coins?
+'''
+'''
+Double-base palindromes
+Problem 36
+The decimal number, 585 = 10010010012 (binary), is palindromic in both bases.
+
+Find the sum of all numbers, less than one million, which are palindromic in base 10 and base 2.
+
+(Please note that the palindromic number, in either base, may not include leading zeros.)
+'''
+#-.- coding: latin-1 -.-
+
+'''
+Champernowne's constant
+Problem 40
+An irrational decimal fraction is created by concatenating the positive integers:
+
+0.123456789101112131415161718192021...
+
+It can be seen that the 12th digit of the fractional part is 1.
+
+If dn represents the nth digit of the fractional part, find the value of the following expression.
+
+d1 × d10 × d100 × d1000 × d10000 × d100000 × d1000000
+'''
+'''
+Self Powers
+Problem 48
+
+The series, 11 + 22 + 33 + ... + 1010 = 10405071317.
+
+Find the last ten digits of the series, 11 + 22 + 33 + ... + 10001000.
+'''
+'''
+Permuted multiples
+Problem 52
+
+It can be seen that the number, 125874, and its double, 251748, contain exactly the same digits, but in a different order.
+
+Find the smallest positive integer, x, such that 2x, 3x, 4x, 5x, and 6x, contain the same digits.
+'''
+#-.- coding: latin-1 -.-
+
+'''
+Combinatoric selections
+Problem 53
+
+There are exactly ten ways of selecting three from five, 12345:
+
+123, 124, 125, 134, 135, 145, 234, 235, 245, and 345
+
+In combinatorics, we use the notation, 5C3 = 10.
+
+In general,
+
+nCr = n!/(r!(n−r)!),where r ≤ n, n! = n×(n−1)×...×3×2×1, and 0! = 1.
+It is not until n = 23, that a value exceeds one-million: 23C10 = 1144066.
+
+How many, not necessarily distinct, values of nCr, for 1 ≤ n ≤ 100, are greater than one-million?
+'''
+'''
+Counting Summations
+Problem 76
+
+It is possible to write five as a sum in exactly six different ways:
+
+4 + 1
+3 + 2
+3 + 1 + 1
+2 + 2 + 1
+2 + 1 + 1 + 1
+1 + 1 + 1 + 1 + 1
+
+How many different ways can one hundred be written as a sum of at least two positive integers?
+'''
+# This is the precision for this function which can be altered.
+
+# It is recommended for users to keep this number greater than or equal to 10.
+
+# This is the linear search that will occur after the search space has become smaller.
+
+# This is the iterative method of the ternary search algorithm.
+
+# This is the recursive method of the ternary search algorithm.
+
+# This function is to check if the array is sorted.
+
+'''
+This is a type of divide and conquer algorithm which divides the search space into
+3 parts and finds the target value based on the property of the array or list 
+(usually monotonic property).
+
+Time Complexity  : O(log3 N)
+Space Complexity : O(1)
+'''
+# client.py
+
+# server.py
+
+# Python program for Bitonic Sort. Note that this program 
+
+# works only when size of input is a power of 2. 
+
+# The parameter dir indicates the sorting direction, ASCENDING 
+
+# or DESCENDING; if (a[i] > a[j]) agrees with the direction, 
+
+# then a[i] and a[j] are interchanged.*/ 
+
+# if dir = 1, and in descending order otherwise (means dir=0).
+
+# The sequence to be sorted starts at index position low, 
+
+# the parameter cnt is the number of elements to be sorted. 
+
+# sorting its two halves in opposite sorting orders, and then
+
+# calls bitonicMerge to make them in the same order 
+
+# in ASCENDING order
+
+# Driver code to test above
+
+#!/usr/bin/env python
+
+# Author: OMKAR PATHAK
+
+# This program will illustrate how to implement bucket sort algorithm
+
+# Wikipedia says: Bucket sort, or bin sort, is a sorting algorithm that works by distributing the
+
+# elements of an array into a number of buckets. Each bucket is then sorted individually, either using
+
+# a different sorting algorithm, or by recursively applying the bucket sorting algorithm. It is a
+
+# distribution sort, and is a cousin of radix sort in the most to least significant digit flavour.
+
+# Bucket sort is a generalization of pigeonhole sort. Bucket sort can be implemented with comparisons
+
+# and therefore can also be considered a comparison sort algorithm. The computational complexity estimates
+
+# involve the number of buckets.
+
+#  Time Complexity of Solution:
+
+#  Best Case O(n); Average Case O(n); Worst Case O(n)
+
+# Code contributed by Honey Sharma
+
+#  Main Code starts here
+
+#!/usr/bin/env python
+
+#
+
+# Sort large text files in a minimum amount of memory
+
+#
+
+'''
+This is a pure python implementation of the heap sort algorithm.
+
+For doctests run following command:
+python -m doctest -v heap_sort.py
+or
+python3 -m doctest -v heap_sort.py
+
+For manual testing run:
+python heap_sort.py
+'''
+'''
+    Pure implementation of the heap sort algorithm in Python
+    :param collection: some mutable ordered collection with heterogeneous
+    comparable items inside
+    :return: the same collection ordered by ascending
+
+    Examples:
+    >>> heap_sort([0, 5, 3, 2, 2])
+    [0, 2, 2, 3, 5]
+
+    >>> heap_sort([])
+    []
+
+    >>> heap_sort([-2, -5, -45])
+    [-45, -5, -2]
+    '''
+'''
+Python implementation of merge sort algorithm.
+Takes an average of 0.6 microseconds to sort a list of length 1000 items.
+Best Case Scenario : O(n)
+Worst Case Scenario : O(n)
+'''
+# Pancake sort algorithm 
+
+# Only can reverse array from 0 to i
+
+#     a
+
+#    / \
+
+#   b  c
+
+#  / \
+
+# d  e
+
+# Tree_sort algorithm
+
+# Build a BST and in order traverse.
+
+# calculate palindromic length from center with incresmenting difference
+
+'''
+Algorithm for calculating the most cost-efficient sequence for converting one string into another.
+The only allowed operations are
+---Copy character with cost cC
+---Replace character with cost cR
+---Delete character with cost cD
+---Insert character with cost cI
+'''
+# iteration version
+
