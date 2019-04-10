@@ -2,6 +2,7 @@ import sklearn
 import os
 import numpy as np
 import pandas as pd
+from sklearn import svm
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
@@ -14,7 +15,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier
 
 
 column_names=['CopyrightComments','RelevantComments','TaskComments','CodeComments','IrrelevantComments']
@@ -90,9 +91,10 @@ print(metrics.classification_report(y_test, predicted,target_names=column_names)
 
 print('Decision Tree Classifier')
 print()
+
 text_clf = Pipeline([('count_vect', CountVectorizer()),
                      ('tfidf_transformer', TfidfTransformer()),
-                     ('clf',DecisionTreeClassifier(max_depth=5, random_state=42),)])
+                     ('clf',DecisionTreeClassifier(max_depth=90, random_state=42),)])
 text_clf.fit(X_train, y_train)
 predicted = text_clf.predict(X_test)
 print(np.mean(predicted == y_test))
@@ -100,6 +102,8 @@ print(np.mean(predicted == y_test))
 print(metrics.classification_report(y_test, predicted,target_names=column_names))
 
 print('Logistic Regresion')
+svc = svm.SVC(gamma="scale")
+parameters = {'kernel':('linear', 'rbf'), 'C':[1, 10]}
 text_clf = Pipeline([('count_vect', CountVectorizer()),
                      ('tfidf_transformer', TfidfTransformer()),
                      ('clf',LogisticRegression(solver="lbfgs", random_state=42),)])
@@ -109,4 +113,36 @@ print(np.mean(predicted == y_test))
 
 print(metrics.classification_report(y_test, predicted,target_names=column_names))
 
- 
+print('Random Forest Classifier')
+print()
+# Maximum accuracy is at 75%
+    
+text_clf = Pipeline([('count_vect', CountVectorizer()),
+                     ('tfidf_transformer', TfidfTransformer()),
+                     ('clf', RandomForestClassifier(n_estimators=100, max_depth=100,random_state=0)),])
+text_clf.fit(X_train,y_train)
+predict = text_clf.predict(X_test)
+print(np.mean(predict == y_test))
+print(metrics.classification_report(y_test, predict,target_names=column_names))
+
+print('Ada Boost Classifier')
+print()
+
+text_clf = Pipeline([('count_vect', CountVectorizer()),
+                     ('tfidf_transformer', TfidfTransformer()),
+                     ('clf', AdaBoostClassifier()),])
+text_clf.fit(X_train,y_train)
+predict = text_clf.predict(X_test)
+print(np.mean(predict == y_test))
+print(metrics.classification_report(y_test, predict,target_names=column_names))
+
+print('GradientBoostingClassifier')
+print()
+text_clf = Pipeline([('count_vect', CountVectorizer()),
+                     ('tfidf_transformer', TfidfTransformer()),
+                     ('clf', GradientBoostingClassifier(n_estimators=200)),])
+text_clf.fit(X_train,y_train)
+predict = text_clf.predict(X_test)
+print(np.mean(predict == y_test))
+print(metrics.classification_report(y_test, predict,target_names=column_names))
+
