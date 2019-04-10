@@ -36,7 +36,9 @@ for (dirpath, dirnames, filenames) in walk(mypath):
                     print(lines)
             a=re.compile("\'\'\'.*?\'\'\'",re.DOTALL)
             ans=a.findall(text)
-            for text in ans:
+            b=re.compile("\"\"\".*?\"\"\"",re.DOTALL)
+            ans1 = b.findall(text)
+            for text in ans1:
                 f2.write(text)
                 f2.write("\n")
             print(ans)
