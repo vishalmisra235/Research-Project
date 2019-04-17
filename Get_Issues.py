@@ -8,15 +8,21 @@ import sys
 import re
 import os
 
-f1=open(os.path.join(r'F:\Research Project','links.txt'), "r")
 
+alldir = []
+f3 = open("filenames.txt", "r")
+alldir = f3.readlines()
+for i in range(0, len(alldir)):
+    alldir[i] = alldir[i].replace("\n", '')
+f1=open(os.path.join(r'C:\Users\Sai Krupa\Documents\Documents\CS-VI\Research_Project\GitHubRepos','allLinks.txt'), "r")
+links = f1.readlines()
 usr ='vishalmisra235'
 pwd='vishal@1998'
 
 options = Options()
 options.add_argument("--disable-notifications")
 
-driver = webdriver.Chrome(r"C:\Users\Vishal\Desktop\Old HP Laptop data\chromedriver_win32\chromedriver.exe",chrome_options=options)
+driver = webdriver.Chrome(r"C:\Users\Sai Krupa\Downloads\chromedriver.exe",chrome_options=options)
 driver.get('https://github.com/login')
 print("Opened Github")
 
@@ -33,44 +39,56 @@ login_box[0].click()
 print("Entered Github")
 
 c=1
-for link in f1:
-        
-    driver.get(link+"/issues?q=is:issue is:closed")
-    f2 = open(os.path.join(r'F:\Research Project',str(c)+'.txt'),"w")
-    try:
-        total_pages = driver.find_elements_by_tag_name('em')[0].get_attribute('data-total-pages')
-    except:
-        total_pages="1"
-    print("Total Pages: "+total_pages)
-    sleep(2)
-
-    for i in range(int(total_pages)):
-        driver.get(link+"/issues?page="+str(i+1)+"&q=is:issue is:closed")
-        issues = driver.find_elements_by_class_name('opened-by')
-        print(i)
+for i in range(8,25):
+    print(i)
+    link = links[i].strip()
+    print(link)
+    repo = ''
+    pos = link.rfind('/')
+    repo = link[pos+1:] + '-master'
+    print(repo)
+    if repo in alldir:
+        print("ok")
+        driver.get(link+"/issues?q=is:issue is:closed")
+        f2 = open(os.path.join(r'C:\Users\Sai Krupa\Documents\Documents\CS-VI\Research_Project\GitHubRepos'+'\\'+ repo, 'issues.txt'),"w")
+        try:
+            total_pages = driver.find_elements_by_tag_name('em')[0].get_attribute('data-total-pages')
+        except:
+            total_pages="1"
+        #print("Total Pages: "+total_pages)
         sleep(2)
+
         
-        issue_nos=[]
-        for issue in issues:
-            issue_no = ((issue.text.split())[0].split('#'))[1]
-            print(issue_no)
-            issue_nos.append(issue_no)
+        if int(total_pages) > 10:
+            total_pages= 10
+
+        for i in range(int(total_pages)):
+            driver.get(link+"/issues?page="+str(i+1)+"&q=is:issue is:closed")
+            issues = driver.find_elements_by_class_name('opened-by')
+            #print(i)
+            sleep(2)
             
-        for issue in issue_nos:
-            driver.get(link+"/issues/"+issue)
-            open_time = driver.find_elements_by_tag_name('relative-time')[0].get_attribute('title')
-            length = len(driver.find_elements_by_tag_name('relative-time'))
-            close_time = driver.find_elements_by_tag_name('relative-time')[length-1].get_attribute('title')
-            f2.write(issue+"\n")
-            f2.write(open_time+"\n")
-            f2.write(close_time+"\n")
-            f2.write("\n")
-            print("Open Time of Issue no: "+issue+" is "+open_time)
-            print("Close Time of Issue no: "+issue+" is "+close_time)
-            print()
-            sleep(5)
-    c=c+1
-    f2.close()
+            issue_nos=[]
+            for issue in issues:
+                issue_no = ((issue.text.split())[0].split('#'))[1]
+                #print(issue_no)
+                issue_nos.append(issue_no)
+                
+            for issue in issue_nos:
+                driver.get(link+"/issues/"+issue)
+                open_time = driver.find_elements_by_tag_name('relative-time')[0].get_attribute('title')
+                length = len(driver.find_elements_by_tag_name('relative-time'))
+                close_time = driver.find_elements_by_tag_name('relative-time')[length-1].get_attribute('title')
+                f2.write(issue+"\n")
+                f2.write(open_time+"\n")
+                f2.write(close_time+"\n")
+                f2.write("\n")
+                '''print("Open Time of Issue no: "+issue+" is "+open_time)
+                print("Close Time of Issue no: "+issue+" is "+close_time)
+                print()'''
+                sleep(2)
+        c=c+1
+        f2.close()
 
 f1.close()
 sleep(1)
