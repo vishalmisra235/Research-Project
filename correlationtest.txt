@@ -1,0 +1,15 @@
+Correlation tests are done for set of 66 repositories:
+Here are the results
+
+
+SpearmanrResult(correlation=0.5159389341014344, pvalue=1.5059980253079972e-05) - closed issues
+SpearmanrResult(correlation=0.38258239615272815, pvalue=0.001971487822929323) - open issues
+SpearmanrResult(correlation=0.500360067549601, pvalue=2.9685096979389506e-05) - both open and close
+
+Ttest_relResult(statistic=1.7030646722998413, pvalue=0.0935645254327007) - closed issues
+Ttest_relResult(statistic=3.529686651502143, pvalue=0.0007906574107684351) - open issues
+Ttest_relResult(statistic=0.8412911021126552, pvalue=0.403418039930304) - both open and close
+
+WilcoxonResult(statistic=970.0, pvalue=0.7947465622426487) - closed issues
+WilcoxonResult(statistic=271.5, pvalue=7.699989312202213e-07) - open issues
+WilcoxonResult(statistic=831.0, pvalue=0.2256041010436003) - both open and close

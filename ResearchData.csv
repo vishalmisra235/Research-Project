@@ -1,0 +1,263 @@
+CopyrightComments,RelevantComments,TaskComments,CodeComments,IrrelevantComments
+The MIT License (MIT),These are the the ssh-keygen default extensions:,todo real abstract classes,"ssh-keygen -s test-rsa-ca -h -n host.example.com,192.168.1.1,host2.example.com -I ""ssh-keygen -s test-rsa-ca -h -n host.example.com,192.168.1.1,host2.example.com -I '' test-rsa-host-many-principals.pub"" test-rsa-host-many-principals.pub",remember if we already had six _before_ installation
+Copyright (c) Crossbar.io Technologies GmbH,This relies on each of the submodules having an __all__ variable.,These are for the test CA Private Key.  Please don't use it for anything other than unit tests.  Just don't.,"ssh-keygen -s test-rsa-ca -I ""ssh-keygen -s test-rsa-ca -I '' test-rsa-user-all-defaults.pub"" test-rsa-user-all-defaults.pub",read version string
+"Permission is hereby granted, free of charge, to any person obtaining a copy","Performance comparison of IdGenerator.next(), id() and rid().",There doesn't seem to be any practical size limits of an SSH Certificate Principal (> 4096B allowed).,!/usr/bin/env python,read package long description
+"of this software and associated documentation files (the ""Software""), to deal","All tests were performed on: - Ubuntu 14.04 LTS x86-64 , - Intel Core i7 920 @ 3.3GHz","On Debian, the only constraints are that usernames must neither start",!/usr/bin/env python3.6,lz4: do we need that anyway?
+"in the Software without restriction, including without limitation the rights","Position, Volume, State, TmSt/TmEx/None, [call, [arg1...]]",with a dash ('-') nor plus ('+') nor tilde ('~') nor contain a colon,!/usr/bin/env python3.7,TLS transport encryption
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",No formatting to the end of the file,"(':'), a comma (','), or a whitespace (space: ' ', end of line: '\n',",!/usr/bin/env python2,WAMP-cryptosign end-to-end encryption
+"copies of the Software, and to permit persons to whom the Software is",standalone comment at ENDMARKER,"tabulation: '\t', etc.). Note that using a slash ('/') may break the",PyPy 2.6.1:,WAMP-cryptosign authentication
+"furnished to do so, subject to the following conditions:",The percent-percent comments are Spyder IDE cells.,default algorithm for the definition of the user's home directory.,IdGenerator.next()    0.5s,Support for WAMP-SCRAM authentication
+he above copyright notice and this permission notice shall be included in,Please keep __all__ alphabetized within each category.,The input source must not contain any Py36-specific syntax (e.g. argument type,id()                 29.4s,everything
+all copies or substantial portions of the Software.,Example configuration for intersphinx: refer to the Python standard library.,"annotations, trailing comma after *rest) or this test becomes invalid.",rid()               106.1s,regenerate Twisted plugin cache
+"THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",This lead to extremely hard to track down issues due to ID collisions!,This comment should be split from `some_instruction` by two lines but isn't.,CPython 2.7.10:,output
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,","Note on the ID range [0, 2**53]. We once reduced the range to [0, 2**31].",Note: crappy but inevitable.  The current design of EmptyLineTracker doesn't,IdGenerator.next()   49.0s,Comment 1
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE,Here: https://github.com/crossbario/autobahn-python/issues/419#issue-90483337,allow this to work correctly.  The user will have to split those lines by hand,id()                370.5s,SECTION BECAUSE SECTIONS
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER","8 byte mask with 53 LSBs set (WAMP requires IDs from [0, 2**53]",A list of files that should not be packed into the epub file.,rid()               196.4s,leading comment
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",noinspection PyShadowingBuiltins a standard base36 character set,"Because of leftmost-then-longest match semantics, be sure to put the longest operators first (e.g., if = came before ==, == would get recognized as two instances of =).",DEFAULT_TOKEN_CHARS = string.digits + string.ascii_uppercase,test type comments
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN,"we take out the following 9 chars (leaving 27), because there",Do not introduce or remove backslashes in raw strings,epub_uid = '',leading function comment
+THE SOFTWARE.,"is visual ambiguity: 0/O/D, 1/I, 8/B, 2/Z",Twisted dependencies (be careful bumping these minimal versions,epub_identifier = '',MORE END COMMENTS
+Copyright (c) Crossbar.io Technologies GmbH,Select the most precise walltime measurement function available on the platform,as we make claims to support older Twisted!),"default: ``['localtoc.html', 'relations.html', 'sourcelink.html','searchbox.html']``.",Who knows.
+"Permission is hereby granted, free of charge, to any person obtaining a copy",Grouping the document tree into Texinfo files. List of tuples,asyncio dependencies,coding=utf-8,"Many, many, many lines."
+"of this software and associated documentation files (the ""Software""), to deal",Bibliographic Dublin Core info.,"C-based WebSocket acceleration (only use on CPython, not PyPy!)","status=concluded
+chain_id=chain-X-migrated-at-height-1
+app_hash=last_app_hash
+validators=[{''.join([f""""""
+    {{
+        ""pub_key"": {{
+            ""type"": ""tendermint/PubKeyEd25519"",
+            ""value"": ""{v['public_key']}""
+        }},
+        ""power"": {v['storage']['voting_power']}
+    }}{',' if i + 1 != len(validators) else ''}"""""" for i, v in enumerate(validators)])}
+]",Maybe Vim or Emacs directives for formatting.
+"in the Software without restriction, including without limitation the rights",The unique identifier of the text. This can be a ISBN number,non-standard WebSocket compression support (FIXME: consider removing altogether),"def utcnow():
+      now = datetime.datetime.utcnow()
+      return now.strftime(""%Y-%m-%dT%H:%M:%SZ"")",Some closing comments.
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",Grouping the document tree into LaTeX files. List of tuples,Ubuntu: sudo apt-get install libsnappy-dev,source_encoding = 'utf-8-sig',"Has many lines. Many, many lines."
+"copies of the Software, and to permit persons to whom the Software is",Output file base name for HTML help builder.,"accelerated JSON and non-JSON WAMP serialization support (namely MessagePack, CBOR and UBJSON)",today = '',The language for content autogenerated by Sphinx. Refer to documentation
+"furnished to do so, subject to the following conditions:","Add any paths that contain templates here, relative to this directory.",Support native vector (SIMD) acceleration included with Autobahn,"today_fmt = '%B %d, %Y'",The master toctree document.
+The above copyright notice and this permission notice shall be included in,You can specify multiple suffix as a list of string:,"cffi based extension modules to build, currently only NVX",default_role = None,backwards compatible interface
+all copies or substantial portions of the Software.,"If extensions (or modules to document with autodoc) are in another directory,
+ add these directories to sys.path here. If the directory is relative to the
+ documentation root, use os.path.abspath to make it absolute, like shown here.",development dependencies,add_function_parentheses = True,--start constants--
+"THE SOFTWARE IS PROVIDED ""AS IS"", fWITHOUT WARRANTY OF ANY KIND, EXPRESS OR",Map from operator to number (since tokenize doesn't do this),"for testing by users with ""python setup.py test"" (not Tox, which we use)",add_module_names = True,Python imports
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",This is used internally by tests to shut down the server prematurely,The tests generated 100 mio. IDs and run-time was measured,show_authors = False,Modifications:
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE,Return True if `leaf` is a multiline string that actually spans many lines.,"as wallclock from Unix ""time"" command. In each run, a single CPU",modindex_common_prefix = [],empty
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",Star expressions are also used as assignment targets in extended,core was essentially at 100% load all the time (though the sys/usr ratio was different).,keep_warnings = False,Local imports
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",iterable unpacking (PEP 3132).  See what its parent is instead.,this module is available as the 'wamp' command-line tool or as,"html_last_updated_fmt = '%b %d, %Y'","we monkey patch here, we do it manually."
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN,Return True if `leaf` is a star or double star in a vararg or kwarg.,python -m autobahn',html_extra_path = [],edge case:
+THE SOFTWARE,"If `within` includes VARARGS_PARENTS, this applies to function signatures.",XXX other ideas to get 'connection config':,html_use_smartypants = True,Populate the line
+Copyright (c) Crossbar.io Technologies GmbH,"If `within` includes UNPACKING_PARENTS, it applies to right hand-side","- if there .crossbar/ here, load that config and accept a --name or","""tls"": options,
+               ""tls"": {
+                    u""hostname"": u""localhost"",
+                    u""trust_root"": cert_fname,
+                },",Describes a piece of syntax that is a comment
+"Permission is hereby granted, free of charge, to any person obtaining a copy",extended iterable unpacking (PEP 3132) and additional unpacking generalizations (PEP 448).,so to idicate which transport to use,or: from autobahn.asyncio.wamp import ApplicationSession,"Make sure we correctly deal with unsubscribing one of our handlers
+            from the same topic."
+"of this software and associated documentation files (the ""Software""), to deal",Return True if `node` holds a `yield` or `yield from` expression.,"wamp [options] {call,publish,subscribe,register} wamp-uri [args] [kwargs]",or: from autobahn.asyncio.wamp import ApplicationSession,"If we subscribe twice, and unsubscribe twice, we should then get
+            an Unsubscribed message."
+"in the Software without restriction, including without limitation the rights","Return True if `node` holds a tuple with one element, with or without parens.",kwargs are spec'd with a 2-value-consuming --keyword option:,"def hello_name(name: str) -> str:
+    return(f""Hello {name}"")", Asset
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",Return True if `node` holds an empty tuple.,--keyword name value,help(str),Inputs
+"copies of the Software, and to permit persons to whom the Software is","If it's safe, make the parens in the atom `node` invisible, recursively.","Twisted specific utilities (these should really be in Twisted, but","class str(object)
+ |  str(object='') -> str
+ |  str(bytes_or_buffer[, encoding[, errors]]) -> str",Outputs
+"furnished to do so, subject to the following conditions:",Returns whether the node should itself be wrapped in invisible parentheses.,"they aren't, and we use these in example code, so it must be part of",dir(str),Conditions
+The above copyright notice and this permission notice shall be included in,"Starting from the container of `leaf`, generate all leaves until `# fmt: on`.",the public API),print(str.__doc__),Version
+all copies or substantial portions of the Software.,Stops at the end of the block.,WebSocket protocol support,"str.__doc__ = ""I'm a little string doc! Short and stout; here is my input and print me for my out""",ID
+"THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",That happens when one of the `ignored_nodes` ended with a NEWLINE,support for running Twisted stream protocols over WebSocket,"def say_hello(name):
+    print(f""Hello {name}, is it me you're looking for?"")
+
+say_hello.__doc__ = ""A simple function that says hello... Richie style""",Operation
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,", leaf (possibly followed by a DEDENT).,Twisted Web support - FIXME: these imports trigger import of Twisted reactor!,help(say_hello),Metadata
+All rights reserved.,Convert content of a single `# fmt: off`/`# fmt: on` into a standalone comment.,"from autobahn.twisted.resource import WebSocketResource, WSGIRootResource WAMP support","def say_hello(name):
+    """"""A simple function that says hello... Richie style""""""
+    print(f""Hello {name}, is it me you're looking for?"")",Helper functions
+"Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006 Python Software Foundation.",Returns True if a pair was converted.,"t.i.reactor doesn't exist until we've imported it once, but we","class SimpleClass:
+    """"""Class docstrings go here.""""""
+
+    def say_hello(self, name: str):
+        """"""Class method docstrings go here.""""""
+
+        print(f'Hello {name}')",Test of schema utils
+"Copyright 2004-2005 Elemental Security, Inc. All Rights Reserved.",Convert content between `# fmt: off`/`# fmt: on` into standalone comments.,need it to exist so we can @patch it out in the tests ...,"import argparse
+import pandas as pd",TRANSFER divisible asset
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE,"""import from"" nodes store parentheses directly as part of the statement",SigningKey from,"def get_spreadsheet_cols(file_loc, print_cols=False):",Single owners_after
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",Make existing optional parentheses invisible or create new ones. `parens_after` is a set of string leaf values immeditely after which parens should be put.,- raw byte string or file with raw bytes,"file_data = pd.read_excel(file_loc)
+    col_headers = list(file_data.columns.values)
+
+    if print_cols:
+        print(""\n"".join(col_headers))",Multiple inputs
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",this is transport independent part of WAMP protocol,- SSH private key string or key file,"def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        'input_file',
+        type=str,
+        help=""The spreadsheet file to pring the columns of""
+    )
+    args = parser.parse_args()
+    get_spreadsheet_cols(args.input_file, print_cols=True)
+
+
+if __name__ == ""__main__"":
+    main()",Single output
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN,this is asyncio dependent part of WAMP protocol,- SSH agent proxy,session.leave(),Package Versions
+THE SOFTWARE.,WebSocket protocol support,VerifyKey from,"options=SubscribeOptions(match=u""prefix"")",Open Issues
+"Permission is hereby granted, free of charge, to any person obtaining a copy",because py.test tries to collect it as a test-case,- raw byte string or file with raw bytes,"def catch_all(*args, **kw):
+     print(""catch_all({}, {})"".format(args, kw))",Docker Images
+"of this software and associated documentation files (the ""Software""), to deal","The Python urlparse module currently does not contain the rs/rss schemes, so we add those dynamically (which is a hack of course).",- SSH public key string or key file,"like this:
+    {
+        ""type"": ""websocket"",
+        ""endpoint"": {
+            ""type"": ""unix"",
+            ""path"": ""unix-websocket""
+        }
+    }",RIP LVB
+"in the Software without restriction, including without limitation the rights",Since the urllib from six.moves does not seem to expose the stuff,experimental authentication API,file_loc (str),cover when onLeave called after we have a valid session
+Licensed to PSF under a Contributor Agreement.,"Standardizes on visible parentheses for single-element tuples, and keeps existing visible parentheses for other tuples and generator expressions.","Value for algo attribute in end-to-end encrypted messages using cryptobox, which is a scheme based on Curve25519, SHA512, Salsa20 and Poly1305",print_cols (bool),Session
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell","Formats a float string like ""1.0"".",strict URI check allowing empty URI components,factory.setProtocolOptions(autoFragmentSize = 4),Transport
+"copies of the Software, and to permit persons to whom the Software is",Leave octal and binary literals alone.,loose URI check allowing empty URI components,factory.setProtocolOptions(perMessageCompressionAccept = accept0),Connection
+"furnished to do so, subject to the following conditions:",Change hex literals to upper case.,strict URI check disallowing empty URI components,factory.setProtocolOptions(perMessageCompressionAccept = accept1),Component
+The above copyright notice and this permission notice shall be included in,"Normalizes numeric (float, int, and complex) literals.",loose URI check disallowing empty URI components,"def _get_indentation(line):
+    """"""Return leading whitespace.""""""
+    if line.strip():
+        non_whitespace_index = len(line) - len(line.lstrip())
+        return line[:non_whitespace_index]
+
+    return ''",Service
+all copies or substantial portions of the Software.,All letters used in the representation are normalized to lowercase (except in Python 2 long literals).,strict URI check disallowing empty URI components in all but the last component,factory.setProtocolOptions(perMessageCompressionAccept = accept2),Client
+"THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",Do not introduce backslashes in interpolated expressions,loose URI check disallowing empty URI components in all but the last component,factory.setProtocolOptions(perMessageCompressionAccept = accept3),"""<project> v<release> documentation""."
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",Consider the string without unnecessary escapes as the original,custom (=implementation specific) WAMP attributes (used in WAMP message details/options),"def _is_binary_operator(token_type, text):
+    return ((token_type == tokenize.OP or text in ['and', 'or']) and
+            text not in '()[]{},:.;@=%~')",Block comment
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE,Prefer double quotes but only if it doesn't cause more escaping.  Adds or removes backslashes as appropriate. Doesn't parse and fix strings nested in f-strings (yet).  Note: Mutates its argument.,JSON serialization is always supported,"else text[-1]
+            # Extract string modifiers (e.g. u or r)
+            quote_pos = text.index(quote)
+            prefix = text[:quote_pos].lower()
+            start = quote_pos + len(quote)
+            string = text[start:-len(quote)]
+
+            if 'r' not in prefix:
+                pos = string.find('\\')
+                while pos >= 0:
+                    pos += 1
+                    if string[pos] not in valid:
+                        yield (
+                            # No need to search line, token stores position
+                            start_pos[1],
+                            ""W605 invalid escape sequence '\\%s'"" %
+                            string[pos],
+                        )
+                    pos = string.find('\\', pos + 1)",Block comment1
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",The following triggers an import of reactor at module level!,UBJSON serialization depends on the `py-ubjson` package being available,"def get_module_imports_on_top_of_file(source, import_line_index):",Block comment2
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",Make all string prefixes lowercase.,"automatically generated by the FlatBuffers compiler, do not modify","def get_index_offset_contents(result, source):
+    """"""Return (line_index, column_offset, line_contents).""""""
+    line_index = result['line'] - 1
+    return (line_index,
+            result['column'] - 1,
+            source[line_index])",Okay
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN,"If remove_u_prefix is given, also removes any u prefix from the string.","Ensure the runner doesn't swallow errors and that it exits the
+            reactor properly if there is one.","def longest_line_length(code):
+    """"""Return length of longest line.""""""
+    return max(len(line) for line in code.splitlines())",This is a multi-line comment
+THE SOFTWARE.,Note: Mutates its argument.,Test the autobahn.asyncio.wamp.ApplicationRunner class.,"def join_logical_line(logical_line):
+    """"""Return single line based on logical line input.""""""
+    indentation = _get_indentation(logical_line)
+
+    return indentation + untokenize_without_newlines(
+        generate_tokens(logical_line.lstrip())) + '\n'",This is a single line comment.
+Copyright (C) 2018 Łukasz Langa,Leave existing extra newlines if not `inside_brackets`. Remove everything else. Note: don't use backslashes for formatting or you'll lose your voting rights.,"what if the WAMP error message received contains args/kwargs that cannot be consumed by the constructor of the exception
+","def __init__(self, max_line_length):
+        self._max_line_length = max_line_length
+        self._lines = []
+        self._bracket_depth = 0
+        self._prev_item = None
+        self._prev_prev_item = None",And this one is a second paragraph which spans on 3 lines.
+"Copyright 2006 Google, Inc. All Rights Reserved.",Return True if the given leaf is a special comment.,"This is used by tests, which typically attach their own handler to
+        on*() methods. This just collects any errors from onUserError","class ListNode:
+     def __init__(self, x):
+        self.val = x
+         self.next = None", Hey this is a testcase
+Copyright 2011 by Armin Ronacher. Licensed under BSD license.,Return True if the given leaf starts an import statement.,This is required for the alabaster theme,"class TreeNode:
+     def __init__(self, x):
+         self.val = x
+         self.left = None
+         self.right = None",A basic comment
+SPDX-License-Identifier: (Apache-2.0 AND CC-BY-4.0),Append `leaf` to current line or to new line if appending impossible.,,"class RandomListNode:
+     def __init__(self, x):
+         self.label = x
+         self.next = None
+         self.random = None",with a long long long long long long long long long long long long long long long line
+Copyright BigchainDB GmbH and BigchainDB contributors,Split standalone comments from the rest of the line.,Code is Apache-2.0 and docs are CC-BY-4.0,"class TreeLinkNode:
+     def __init__(self, x):
+         self.val = x
+         self.left = None
+         self.right = None
+         self.next = None",I'm some great comment.  Because I'm so great.
+Author: Vishal Misra,"Split according to delimiters of the highest priority. If the appropriate Features are given, the split will add trailing commas also in function signatures and calls that contain `*` and `**`.","TODO test for the case of an empty list of hashes, and possibly other cases.",print(response.cookies),This almost_empty_line
+Author: Sai Krupa Reddy,Normalize prefix of the first leaf in every line returned by `split_func`.,"TODO Beware if you are putting breakpoints in there, and using the '-s'  switch with pytest. It will just hang. Seems related to the monkeypatching of input_on_stderr.",print(session.cookies),The extent of the full element
+Authors: Vishesh Mark and Manoj,This is a decorator over relevant split functions.,See related issue: https://github.com/pytest-dev/pytest/issues/128,,A high-level representation of an if-expression.
+© 2009 Joel Friedlander,Return a new line with given `leaves` and respective comments from `original`.,This code is a Python implementation of the algorithm,,Some shit comment
+Copyright © 2010 by Bill Shakespeare,"If `is_body` is True, the result line is one-indented inside brackets and as such  has its first leaf's prefix normalized and a trailing comma added when expected.",use Cython implementation of UTF8 validator if available,,abc
+"No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law. For permission requests, write to the publisher, addressed “Attention: Permissions Coordinator,” at the address below.",Raise :exc:`CannotSplit` if the last left- or right-hand split failed.,add these 3rd party images by default,,Hello world.
+This code or any portion of code thereof may not be reproduced or used in any manner whatsoever without the express written permission of the author.,"If there is no opening or closing_bracket that means the split failed and all content is in the tail.  Otherwise, if `head_leaves` are empty, it means the matching `opening_bracket` wasn't available on `line` anymore.","now actually pull the images, and push to the private registry",,Hello 
+It is hence licensed under the Twisted license (essentially BSD less advertising):,"Split line into many lines, starting with the last matching bracket pair.",generate a user help file for the images,,My comment
+Copyright © 1982 by Thomas Nelson. Used by permission. All rights reserved.,"Split line into many lines, starting with the first matching bracket pair.",This file is execfile()d with the current directory set to its containing dir.,,A comment.
+"Permission is hereby granted, free of charge, to any person obtaining a copy","Note: this usually looks weird, only use this for function definitions. Prefer RHS otherwise.  This is why this function is not symmetrical with :func:`right_hand_split` which also handles optional parentheses.",Note that not all possible configuration values are present in this autogenerated file.,,The following is ugly commented-out code and should not be touched.
+" of this software and associated documentation files (the ""Software""), to deal","We are accumulating lines in `result` because we might want to abort mission and return the original line in the end, or attempt a different split altogether.",All configuration values have a default; values that are commented out serve to show the default.,,-- Useless lines ----------------------------------------------------------------------
+"in the Software without restriction, including without limitation the rights","All splits failed, best effort split with no omits. This mostly happens to multiline strings that are by definitio reported as not fitting a single line.","If extensions (or modules to document with autodoc) are in another directory, add these directories to sys.path here. If the directory is relative to the documentation root, use os.path.abspath to make it absolute, like shown here.",,this is comment
+" to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",Return a consistently formatted comment from the given `content` string.,see: http://stackoverflow.com/a/28778969,,foo
+" copies of the Software, and to permit persons to whom the Software is",Return a list of :class:`ProtoComment` objects parsed from the given `prefix`.,see: http://stackoverflow.com/a/28778969,,not actually a comment
+"furnished to do so, subject to the following conditions:","Clean the prefix of the `leaf` and generate comments from it, if any.",see: http://www.sphinx-doc.org/en/stable/ext/autodoc.html#event-autodoc-skip-member,,not a comment
+The above copyright notice and this permission notice shall be included in,"if we don't have argon2/passlib (see ""authentication"" extra) then","If your documentation needs a minimal Sphinx version, state it here.",,this module ...
+all copies or substantial portions of the Software.,you don't get AuthScram and variants,"Add any paths that contain templates here, relative to this directory.",,This should be left alone. -----------------------------------------------------
+"THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",experimental authentication API,The language for content autogenerated by Sphinx. Refer to documentation,,This is a long comment that should be wrapped. I will wrap it using textwrap to be within 72 characters.
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",The following code is adapted from the pbkdf2_bin() function,for a list of supported languages.,,And this one is... a second paragraph ... which spans on 3 lines
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE,in here https://github.com/mitsuhiko/python-pbkdf2,"There are two options for replacing |today|: either, you set today to some non-false value, then it is used:",,
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",this could probably implement twisted.application.service.IService,"Else, today_fmt is used as the format for a strftime call.",,
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",if we wanted; or via an adapter...which just adds a startService(),"List of patterns, relative to source directory, that match files and directories to ignore when looking for source files.",,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.,and stopService() [latter can be async],The reST default role (used for this markup: `text`) to use for all documents,,
+"Permission is hereby granted, free of charge, to any person obtaining a copy",Payload transparency identifier for MQTT payloads (which are arbitrary binary).,"If true, '()' will be appended to :func: etc. cross-reference text.",,
+"of this software and associated documentation files (the ""Software""), to deal",Payload transparency identifier for XBR payloads,"If true, the current module name will be prepended to all description",,
+"in the Software without restriction, including without limitation the rights",Payload transparency algorithm identifiers from the WAMP spec.,unit titles (such as .. function::).,,
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",Payload transparency serializer identifiers from the WAMP spec.,"If true, sectionauthor and moduleauthor directives will be shown in the output. They are ignored by default.",,
+"copies of the Software, and to permit persons to whom the Software is",ISession.register collides with the abc.ABCMeta.register method,"If true, `todo` and `todoList` produce output, else they produce nothing.",,
+"furnished to do so, subject to the following conditions:",ISession.register(ApplicationSession),The theme to use for HTML and HTML Help pages.  See the documentation for a list of builtin themes.,,
+Author: Steven J. Bethard <steven.bethard@gmail.com>.,"This is an internal generic error-handler for errors encountered
+        when calling down to on*() handlers that can reasonably be
+        expected to be overridden in user code.","Theme options are theme-specific and customize the look and feel of a theme further.  For a list of options available for each theme, see the documentation.",,
+Copyright (C) 2010-2011 Hideo Hattori,"Specifically, this should *never* be added to the errback
+        chain for a Deferred/coroutine that will make it out to user
+        code.",The name of an image file (within the static path) to use as favicon of the docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32 pixels large.,,
+"Copyright (C) 2011-2013 Hideo Hattori, Steven Myint",This just fakes out enough reactor methods so .run() can work.,Add any paths that contain custom static files (such as style sheets) here,,
+"Copyright (C) 2013-2016 Hideo Hattori, Steven Myint, Bill Wendling","Ensure that loop.create_connection is called with the exact SSL
+            context object that is passed (as ssl) to the __init__ method of
+            ApplicationRunner.",relative to this directory. They are copied after the builtin static files,,
+,"If not '', a 'Last updated on:' timestamp is inserted at every page bottom using the given strftime format.","so a file named ""default.css"" will overwrite the builtin ""default.css""",,
+,Using quick sort for performance gains,"Add any extra paths that contain custom files (such as robots.txt or .htaccess) here, relative to this directory. These files are copied directly to the root of the documentation. link:http://stackoverflow.com/a/190073580",,
+,"If true, the index is split into individual pages for each letter",TODO: Add condition for when val is None,,
+,this is a synchronous wrapper around the asynchronous WAMP code,pip install klein,,
+,Ensure that loop.create_connection is called with the exact SSL context object that is passed (as ssl) to the __init__ method of ApplicationRunner.,"create virtualenv with autobahn, ansicolors and asciinema installed",,
+,"ApplicationRunner must raise an exception if given an ssl value of True but only a ""ws:"" URL.",pip install autobahn asciinema ansicolors,,
+,"Create a new string object from the given object. If encoding or errors are specified, then the object must expose a data buffer that will be decoded using the given encoding and error handler. Otherwise, returns the result of object.__str__() (if defined) or repr(object). encoding defaults to sys.getdefaultencoding(). errors defaults to 'strict'.",change to root of fresh AutobahnPython checkout,,
+,,"to record and upload, run: asciinema -c ./examples/asciinema-autobahn-demo.py rec",,
+,,to just test this (e.g. without recording anything): python asciinema-autobahn-demo0.py,,
+,,TODO - unify with previous class,,
+,,this can be copy-pasted into the config.json,,
+,,static-configured scram principal; see the example router config,,
+,,run multiple WAMP sessions over the same underlying WAMP transport,,
+,,make sure we run a capable OS/reactor,,
+,,FIXME: streaming mode API is currently incompatible with permessage-deflate!,,
+,,Global fixes should be done first. This is important for things like indentation.,,
+,,FIXME: streaming mode API is currently incompatible with permessage-deflate!,,
+,," Many libraries implement a host of 4x4 matrix math and vector
+    routines, usually related to the historical SGI GL implementation.
+    A common problem is whether matrix element formulas are transposed.
+    One useful FAQ on matrix math can be found at this address:
+    http://www.j3d.org/matrix_faq/matrfaq_latest.html",,
+,,train a neural network,,
+,,evaluate on train data,,
+,,evaluate on validation data,,
+,,This package will contain the spiders of your Scrapy project,,
+,,Please refer to the documentation for information on how to create and manage your spiders,,
+,,Define here the models for your spider middleware,,
