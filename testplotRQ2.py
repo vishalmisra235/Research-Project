@@ -37,37 +37,39 @@ for i in range(0,len(avgTimeValues)):
     relevCommInfo = percentCommValues[i].split()
     numberOfComm = relevCommInfo[1]
     relevCommpercent = relevCommInfo[2]
-    if (int(numberOfComm)>1000):
-        repos.append(repoName)
-        eachRepoInfo = []
-        eachRepoInfo.append(float(avgTime)/86400)
-        eachRepoInfo.append(int(numberOfComm))
-        relevcomm.append(int(numberOfComm))
-        eachRepoInfo.append(float(relevCommpercent))
-        #relevcomm.append(float(relevCommpercent))
-        repoInfo[repoName] = eachRepoInfo
+    #if (int(numberOfComm)>1000):
+    repos.append(repoName)
+    eachRepoInfo = []
+    eachRepoInfo.append(float(avgTime)/86400)
+    eachRepoInfo.append(int(numberOfComm))
+    relevcomm.append(int(numberOfComm))
+    eachRepoInfo.append(float(relevCommpercent))
+    #relevcomm.append(float(relevCommpercent))
+    repoInfo[repoName] = eachRepoInfo
 
 
 
 plot1 = {}
+plot1 = dd(list)
+print(len(repos))
+print(len(avgcommlist))
 for i in range(0,len(repos)):
     lis = repoInfo[repos[i]]
     if avgcommlist[i] != 0:
-        plot1[avgcommlist[i]] = lis[0]
+        plot1[avgcommlist[i]].append(lis[0])
 
+plot1 = dict(plot1)
+print(plot1)
 avgcommlist.sort()
 avgcommlist.remove(0)
+print(avgcommlist)
 
-#relevCOMM = np.array(relevcomm)
-#commNew = np.linspace(relevCOMM.min(), relevCOMM.max(), 107)
-#print(len(relevcomm))
-for i in range(0, len(avgcommlist)):
-    avgtime.append(plot1[avgcommlist[i]])
-#avgTIME = np.array(avgtime)
-#powerSmooth = spline(relevCOMM, avgTIME, commNew)
+for i in list(set(avgcommlist)):
+    for j in range(avgcommlist.count(i)):
+        avgtime.append(plot1[i][j])
+
 print(len(avgtime))
 print(repoInfo)
-print(plot1)
 
 x = np.array(avgcommlist)
 print(x)
